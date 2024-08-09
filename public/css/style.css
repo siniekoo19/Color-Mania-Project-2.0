@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+:root {
+    --blue: #053464;
+    --middle-blue : #52799a;
+    --light-blue : #abc5cd; 
+    --white: #f0f7f9;
+    --yellow: #f6bf15;
+}
+
+body{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--blue);
+    color: var(--white);
+    overflow: hidden;
+}
+
+h3{
+    font-weight: 900;
+}
+
+.start-btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 2.5px;
+    font-size: 20px;
+    height: 35px;
+    width: 85px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    margin-bottom: 40px;
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 220px;
+    width: 220px;
+    border: 2px solid var(--white);
+    border-radius: 35px;
+    margin: 30px 15px;
+}
+
+.red{
+    background-color: rgb(245, 63, 99);
+}
+
+.blue{
+    background-color: rgb(98, 145, 233);
+}
+
+.purple{
+    background-color:rgb(155, 89, 222);
+}
+
+.yellow{
+    background-color: rgb(245, 245, 86);
+}
+
+.flash{
+    background-color: var(--white);
+}
+
+.userflash{
+    background-color: green;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: inline-block;
+}
+
+@media (max-width: 610px){
+    .btn{
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+    }
+    
+    /* .header div{
+        width: 50%;
+        height: 100px;
+    } */
+    
+    /* .header div h1{
+        font-size: 20px;
+    } */
+}
+
+@media (max-width: 360px){
+    .btn{
+        margin-top: 100px;
+        height: 110px;
+        width: 110px;
+        border-radius: 20px;
+        margin: 15px 7.5px;
+    }
+}

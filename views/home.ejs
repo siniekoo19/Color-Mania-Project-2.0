@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR MANIA | Home Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<body>
+    <div class="slide wrapper" id="slide1">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <p>COLOR MANIA</p>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="navigation">
+                    <li><a href="#slide1" class="link active">Home</a></li>
+                    <li><a href="#score-board" class="link">Score Board</a></li>
+                    <li><a href="#how-to-play" class="link">How to play</a></li>
+                    <!-- <li><a href="#about" class="link">About</a></li> -->
+                    <li><a href="http://localhost:8080/user/login" class="link hidden-link">Login</a></li>
+                    <li><a href="http://localhost:8080/user/signup" class="link hidden-link">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a href="http://localhost:8080/user/login"><button class="btn" id="loginbtn">Login</button></a>
+                <a href="http://localhost:8080/user/signup"><button class="btn" id="signupbtn">SignUp</button></a>
+            </div>
+            <div class="nav-menu-btn" id="hamburger-menu" onclick="myMenuFunction()">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+        <div class="slide1-body" id="slide1-body">
+            <div class="img">
+                <img src="/images/bg-image.jpg" alt="img">
+            </div>
+            <div class="para">
+                <p id="para1">Test your memory with Color Mania</p>
+                <p id="para2">The ultimate color-matching challenge with a colorful twist!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Silde 2 -->
+    <div class="slide" id="score-board">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <th>highest Score</th>
+                </tr>
+                <% for(user of users) { %>
+                    <tr>
+                        <td><%= user.email  %></td>
+                        <td><%= user.highest_score %></td>
+                    </tr>
+                <% } %>
+            </table>
+            
+            <div class="explore" id="explore">
+                <p>Explore the Game Without an Account</p>
+                <a href="https://siniekoo19.github.io/Simon-Says-Game/"><button class="btn">Play Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- slide3 -->
+    <div class="slide" id="how-to-play">
+        <div class="container2">
+            <div class="play" id="play">
+                <p id="heading">💙❤️ How to Play 💜💛</p>
+                <p id="about-play">To start the game, press any key on the keyboard. One of the four colored boxes will flash, and you need to remember the sequence of the flashed boxes. Click the boxes in the same order as they flashed. If you repeat the sequence correctly, the game will proceed to the next round, adding another flash to the sequence. Each round adds a new box to the sequence, so keep repeating the sequence correctly to advance to higher rounds. If you click the wrong box, the game ends, and your score, which is the number of rounds you completed, will be displayed. To restart the game, simply press any key on the keyboard again.</p>
+            </div>
+
+            <footer class="footer" id="footer">
+                <div class="footer-upper-info">
+                    <div class="div1" id="div1">
+                        COLOR MANIA
+                    </div>
+                    <div class="div1">
+                        <p><li><a href="#slide1" class="link active">Home</a></li></p>
+                        <p><li><a href="#score-board" class="link">Score Board</a></li></p>
+                        <p><li><a href="#how-to-play" class="link">How to play</a></li></p>
+                    </div>
+                    <div class="div1" id="div4">
+                        <h3>Contact</h3>
+                        <p>Kolkata, West Bengal</p>
+                        <p>9073262628</p>
+                    </div>
+                    
+                </div>
+                <div class="footer-lower-info">
+                    <p>&copy;2024 COLOR MANIA.</p>
+                    <p>Made with &hearts; by Sinchana</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+       const links = document.getElementsByClassName("link");
+       for (let i = 0; i < links.length; i++) {
+            links[i].onclick = function() {
+            // Remove the 'active' class from all links
+                for (let j = 0; j < links.length; j++) {
+                    links[j].classList.remove("active");
+                }
+
+                // Add the 'active' class to the clicked link
+                this.classList.add("active");
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const menu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', function() {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+    </script>
+</body>
+</html>

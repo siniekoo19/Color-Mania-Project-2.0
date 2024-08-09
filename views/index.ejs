@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>COLOR MANIA</title>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>COLOR MANIA</h1> 
+        </div>
+        <div>
+            <h4>Your highest level : <%= user.highest_score %></h4>
+        </div>
+    </div>
+    <h3>Press any key to start the game</h3>
+    <button class="start-btn">START</button>
+    <!-- Main Code -->
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red"></div>
+            <div class="btn blue" type="button" id="blue"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn purple" type="button" id="purple"></div>
+            <div class="btn yellow" type="button" id="yellow"></div>
+        </div>
+    </div>
+
+    <script>
+        // Pass user ID from server-side to client-side script
+        const email = '<%= user.email %>';
+    </script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
