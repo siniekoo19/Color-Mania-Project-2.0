@@ -118,7 +118,7 @@ for (let btn of allBtns){
 
 async function endGame() {
 
-    let data = { email: email, currentScore : level};
+    let data = { email: email, currentScore : (level-1)};
     
     try {
         const response = await fetch('/update_score', {
@@ -137,7 +137,7 @@ async function endGame() {
     }
 
     if (window.innerWidth < 610) {
-        h3.innerHTML = `<h2>Game Over!! Your Score <b>${level}<b> <br> Press Start to restart</h2>`;
+        h3.innerHTML = `<h2>Game Over!! Your Score <b>${(level-1)}<b> <br> Press Start to restart</h2>`;
         displayStartBtn();
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
