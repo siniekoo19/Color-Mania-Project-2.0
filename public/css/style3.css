@@ -249,6 +249,7 @@ td{
 }
 
 #footer{
+    bottom: 0px;
     margin-top: 20px;
     height: 30vh;
     width: 100%;

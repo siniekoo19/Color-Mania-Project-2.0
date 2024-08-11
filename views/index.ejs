@@ -8,25 +8,32 @@
     <title>COLOR MANIA</title>
 </head>
 <body>
-    <div class="header">
-        <div>
-            <h1>COLOR MANIA</h1> 
-        </div>
-        <div>
-            <h4>Your highest level : <%= user.highest_score %></h4>
-        </div>
+    <div class="back-btn-container">
+        <form class="back-from" method="get" action="/">
+            <button class="back-btn"><img class="back-img" src="/images/cancel.png" alt="back"></button>
+        </form>
     </div>
-    <h3>Press any key to start the game</h3>
-    <button class="start-btn">START</button>
-    <!-- Main Code -->
-    <div class="btn-container">
-        <div class="line-one">
-            <div class="btn red" type="button" id="red"></div>
-            <div class="btn blue" type="button" id="blue"></div>
+    <div class="wrapper">
+        <div class="header">
+            <div>
+                <h1>COLOR MANIA</h1> 
+            </div>
+            <div>
+                <h4>Your highest level : <%= user.highest_score %></h4>
+            </div>
         </div>
-        <div class="line-two">
-            <div class="btn purple" type="button" id="purple"></div>
-            <div class="btn yellow" type="button" id="yellow"></div>
+        <h3>Press any key to start the game</h3>
+        <button class="start-btn">START</button>
+        <!-- Main Code -->
+        <div class="btn-container">
+            <div class="line-one">
+                <div class="btn red" type="button" id="red"></div>
+                <div class="btn blue" type="button" id="blue"></div>
+            </div>
+            <div class="line-two">
+                <div class="btn purple" type="button" id="purple"></div>
+                <div class="btn yellow" type="button" id="yellow"></div>
+            </div>
         </div>
     </div>
 
