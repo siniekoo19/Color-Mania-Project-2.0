@@ -20,7 +20,7 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     database : 'game', // Enter your database name
-    password : '@Luvchai5JK#' // Enter your mysql password
+    password : 'your_password' // Enter your mysql password
 }); 
 
 // Home Route 
