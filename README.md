@@ -57,6 +57,18 @@ The project consists of the following files:
 - **Feedback:** The game provides visual feedback by flashing the body red to indicate the user entered the wrong sequence and displays the current score with a game over message when applicable.
 - **Responsive Design:** The game is designed to be responsive. On smaller screens (less than 600px), a "Start" button will be displayed. Once the game starts, the button will disappear, and the level information will be displayed. If the user inputs a wrong sequence, the game over message will be displayed, and the user can restart the game by pressing the "Start" button again.
 
+## Running the Project Locally
+
+To run this project on your local machine, follow these steps:
+
+1. Clone the repository using the following command:
+      ```git clone https://github.com/siniekoo19/Color-Mania-Project-2.0.git``` 
+2. Navigate to the directory where you cloned the project using the command prompt.
+3. Run the following command to start the project:
+      ```node index.js```
+ 
+
+
 ## 🚀 About Me
 👋 Hi there! I'm Sinchana Chatterjee, an enthusiastic and determined B.Tech student with a fervent aspiration to excel as a Web Developer.
 
