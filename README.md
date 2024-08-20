@@ -61,11 +61,10 @@ The project consists of the following files:
 
 To run this project on your local machine, follow these steps:
 
-1. Clone the repository using the following command:
-      ```git clone https://github.com/siniekoo19/Color-Mania-Project-2.0.git``` 
+1. Clone the repository using the following command: ```git clone https://github.com/siniekoo19/Color-Mania-Project-2.0.git``` 
 2. Navigate to the directory where you cloned the project using the command prompt.
-3. Run the following command to start the project:
-      ```node index.js```
+3. Run the following command to start the project: ```node index.js```
+4. Open Chrome and go to: ```http://localhost:8080```
  
 
 
