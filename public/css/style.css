@@ -41,6 +41,7 @@ body{
     height: 30px;
     width: 30px;
     filter: invert(1);
+    cursor: pointer;
 }
 
 h3{

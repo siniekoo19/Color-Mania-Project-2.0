@@ -11,5 +11,6 @@ confirmPass.addEventListener('input', function(e) {
         confirmPass.style.border = '2px solid red';
     } else {
         message.style.display = 'none';
+        confirmPass.style.border = '2px solid rgba(255, 255, 255, .2)';
     }
 });
