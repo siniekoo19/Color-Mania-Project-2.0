@@ -38,18 +38,10 @@ This project now includes a backend powered by Node.js and MySQL. The backend ha
   - If you score higher than your previous highest score, the database is updated with your new high score.
 
 ## Technology Stack 💻
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** EJS, CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL
 - **API:** REST API
-
-## Project Structure 🚀
-The project consists of the following files:
-- **index.html:** The main HTML file containing the structure of the game.
-- **styles.css:** The CSS file for styling the game elements.
-- **script.js:** The JavaScript file that contains the game logic.
-- **server.js:** The Node.js file that handles backend logic.
-- **database.sql:** The SQL file that sets up the MySQL database.
 
 ## GamePlay Mechanics
 - **Sequence Generation:** The game randomly selects one of the four boxes to flash in each round. The sequence of flashed boxes is stored and extended in each round.
