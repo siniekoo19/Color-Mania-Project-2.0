@@ -1,6 +1,10 @@
 # Color Mania Game
 Welcome to the Color Mania Game! This project is a simple implementation of the classic memory game using HTML, CSS, JavaScript, Node.js, and MySQL.
 
+## Preview
+https://github.com/user-attachments/assets/e5e48ba2-7487-4e94-b9c7-8af6d383852b
+
+
 ## Play the Game 💜💛💙❤️
 You can play the game [here](https://siniekoo19.github.io/Color-Mania/).
 
@@ -34,24 +38,27 @@ This project now includes a backend powered by Node.js and MySQL. The backend ha
   - If you score higher than your previous highest score, the database is updated with your new high score.
 
 ## Technology Stack 💻
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** EJS, CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL
 - **API:** REST API
-
-## Project Structure 🚀
-The project consists of the following files:
-- **index.html:** The main HTML file containing the structure of the game.
-- **styles.css:** The CSS file for styling the game elements.
-- **script.js:** The JavaScript file that contains the game logic.
-- **server.js:** The Node.js file that handles backend logic.
-- **database.sql:** The SQL file that sets up the MySQL database.
 
 ## GamePlay Mechanics
 - **Sequence Generation:** The game randomly selects one of the four boxes to flash in each round. The sequence of flashed boxes is stored and extended in each round.
 - **User Input:** Users must click the boxes in the exact sequence as they flashed. The game checks the user input against the stored sequence.
 - **Feedback:** The game provides visual feedback by flashing the body red to indicate the user entered the wrong sequence and displays the current score with a game over message when applicable.
 - **Responsive Design:** The game is designed to be responsive. On smaller screens (less than 600px), a "Start" button will be displayed. Once the game starts, the button will disappear, and the level information will be displayed. If the user inputs a wrong sequence, the game over message will be displayed, and the user can restart the game by pressing the "Start" button again.
+
+## Running the Project Locally
+
+To run this project on your local machine, follow these steps:
+
+1. Clone the repository using the following command: ```git clone https://github.com/siniekoo19/Color-Mania-Project-2.0.git``` 
+2. Navigate to the directory where you cloned the project using the command prompt.
+3. Run the following command to start the project: ```node index.js```
+4. Open Chrome and go to: ```http://localhost:8080```
+ 
+
 
 ## 🚀 About Me
 👋 Hi there! I'm Sinchana Chatterjee, an enthusiastic and determined B.Tech student with a fervent aspiration to excel as a Web Developer.
